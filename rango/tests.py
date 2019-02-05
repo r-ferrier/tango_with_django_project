@@ -4,6 +4,7 @@ from django.contrib.staticfiles import finders
 
 # Thanks to Enzo Roiz https://github.com/enzoroiz who made these tests during an internship with us
 
+
 class GeneralTests(TestCase):
     def test_serving_static_files(self):
         # If using static media properly result is not NONE once it finds rango.jpg
@@ -215,8 +216,8 @@ class Chapter7ViewTests(TestCase):
 
     def setUp(self):
         try:
-            from forms import PageForm
-            from forms import CategoryForm
+            from rango.forms import PageForm
+            from rango.forms import CategoryForm
 
         except ImportError:
             print('The module forms does not exist')
